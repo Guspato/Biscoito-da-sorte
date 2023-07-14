@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+
+/* Screen1 */
+
+body {
+  background: #abd1e1;
+  background: linear-gradient(287.56deg, #c2e9fb 0%, #4b86e4 100%);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 42.8rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: #34355b;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.4rem;
+}
+
+p {
+  color: #000000;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+/* Screen 2 */
+
+h2 {
+  color: #34355b;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.4rem;
+}
+
+.fortune-text {
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Dancing Script;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #e7f5f8;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.BtnRefresh {
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #ff9500;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  margin: auto;
+  margin-top: 2.7rem;
+
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Resto do seu CSS */
+
+/* Adicione o seguinte estilo para a animação de vibração */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px) rotate(-1deg); }
+  20%, 40%, 60%, 80% { transform: translateX(2px) rotate(1deg); }
+  100% { transform: translateX(0); }
+}
+
+.shake-animation {
+  animation: shake 0.4s infinite;
+}
+
+
